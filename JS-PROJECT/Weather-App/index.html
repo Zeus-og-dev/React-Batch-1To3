@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<title>Weather App</title>
+
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css" />
+
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+				font-family: Arial, sans-serif;
+			}
+
+			body {
+				background-color: #f0f0f0;
+			}
+
+			.container {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				height: 100vh;
+			}
+
+			.main {
+				display: flex;
+				flex-direction: column;
+				gap: 20px;
+				background-color: white;
+				padding: 20px;
+				border-radius: 10px;
+				box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+				width: 350px;
+			}
+
+			aside {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+
+			/* Search Bar */
+			.a1 form {
+				display: flex;
+				gap: 10px;
+				width: 100%;
+			}
+
+			.a1 input {
+				flex: 1;
+				padding: 10px;
+				border-radius: 5px;
+				border: 1px solid #ccc;
+			}
+
+			.a1 button {
+				padding: 10px 15px;
+				border-radius: 5px;
+				border: none;
+				background-color: #007bff;
+				color: white;
+				cursor: pointer;
+				transition: background-color 0.3s;
+			}
+
+			.a1 button:hover {
+				background-color: #0056b3;
+			}
+
+			/* Weather Info */
+			.a2 {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				text-align: center;
+			}
+
+			.a2 img {
+				width: 120px;
+				height: 120px;
+				margin-bottom: 10px;
+			}
+
+			/* Extra Details */
+			.a3 {
+				display: flex;
+				justify-content: space-between;
+				width: 100%;
+			}
+
+			.left,
+			.right {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
+
+			.left article,
+			.right article {
+				margin-bottom: 10px;
+				text-align: center;
+			}
+
+			.left img,
+			.right img {
+				width: 50px;
+				height: 50px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="main">
+				<!-- Search -->
+				<aside class="demo a1">
+					<form>
+						<label
+							for="city"
+							style="display: none"
+							>City</label
+						>
+						<input
+							type="text"
+							id="city"
+							placeholder="Enter City Name" />
+						<button type="submit">Get Weather</button>
+					</form>
+				</aside>
+
+				<!-- Weather Info -->
+				<aside class="demo a2">
+					<img
+						src="https://cdn-icons-png.flaticon.com/512/1163/1163661.png"
+						alt="Weather Icon"
+						id="main-image" />
+					<h1 id="temperature">Temperature: 25°C</h1>
+					<h3 id="city-name">City Name</h3>
+				</aside>
+
+				<!-- Details -->
+				<aside class="demo a3">
+					<div class="left">
+						<article>
+							<img
+								src="https://cdn-icons-png.flaticon.com/512/728/728093.png"
+								alt="Humidity Icon" />
+						</article>
+						<article>
+							<span class="humidity">60%</span><br />
+							<span>Humidity</span>
+						</article>
+					</div>
+					<div class="right">
+						<article>
+							<img
+								src="https://cdn-icons-png.flaticon.com/512/5534/5534160.png"
+								alt="Wind Speed Icon" />
+						</article>
+						<article>
+							<span class="wind-speed">15 km/h</span><br />
+							<span>Wind Speed</span>
+						</article>
+					</div>
+				</aside>
+			</div>
+		</div>
+		<script src="./app.js"></script>
+		<script
+			type="text/javascript"
+			src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+	</body>
+</html>

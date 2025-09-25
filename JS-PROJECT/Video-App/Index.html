@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link
+			rel="stylesheet"
+			href="./styles.css" />
+	</head>
+	<body>
+		<div class="container">
+			<section class="video-container">
+				<article class="video-player">
+					<video
+						alter="Video Player"
+						id="videoPlayer"
+						controls></video>
+					<h3 id="videoTitle"></h3>
+					<p id="videoDescription"></p>
+				</article>
+				<h3 class="videoReviewsTitle">Comments</h3>
+				<ul class="review-list">
+					
+				</ul>
+				<form class="review-form">
+					<h2>Comment</h2>
+					<input
+						type="text"
+						id="review"
+						name="review"
+						placeholder="Add Your Comment"
+						required />
+					<button type="submit">Submit Comment</button>
+			</section>
+			<section class="video-list-container">
+				<h2>Video List</h2>
+				<ul
+					id="videoList"
+					class="video-list"></ul>
+			</section>
+		</div>
+		<script src="./App.js"></script>
+	</body>
+</html>

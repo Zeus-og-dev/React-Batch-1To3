@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			* {
+				padding: 0;
+				margin: 0;
+				box-sizing: border-box;
+			}
+			.container {
+				display: flex;
+				height: 100vh;
+				width: 100%;
+			}
+			.demo {
+				height: 100vh;
+			}
+			.left {
+				background-color: #f0f0f0;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				height: 100vh;
+				width: 30%;
+				border-right: 2px solid black;
+			}
+			.right {
+				background-color: #d0d0d0;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				height: 100vh;
+				width: 70%;
+			}
+			.form-data {
+				display: flex;
+				flex-direction: column;
+				gap: 10px;
+			}
+			.form-data input {
+				padding: 10px;
+				font-size: 16px;
+				border: 1px solid #ccc;
+				border-radius: 6px;
+				width: 200px;
+			}
+			.form-data button {
+				padding: 10px;
+				font-size: 16px;
+				border: none;
+				border-radius: 6px;
+				background-color: #007bff;
+				color: white;
+				cursor: pointer;
+			}
+			img {
+				width: 150px;
+				height: 150px;
+				border-radius: 50%;
+			}
+			#result {
+				display: none;
+				text-align: center;
+				font-family: Arial, sans-serif;
+				font-size: 18px;
+				color: #333;
+				padding: 20px;
+				background-color: #fff;
+				border-radius: 8px;
+				box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+				max-width: 400px;
+				width: 100%;
+				word-wrap: break-word;
+				line-height: 1.6;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<section class="demo left">
+				<form
+					class="form-data"
+					id="form">
+					<input
+						type="text"
+						name="username"
+						id="username" />
+					<button type="submit">Search</button>
+				</form>
+			</section>
+			<section class="demo right">
+				<article id="result"></article>
+			</section>
+		</div>
+		<script src="./App.js"></script>
+	</body>
+</html>

@@ -1,0 +1,72 @@
+[
+    {
+        "name" : "Mercedes AMG",
+        "video_src" : "./Assets/Videos/video0.mp4",
+        "description" : "White mercedes-amg making donuts in racing grid.",
+        "image_src" : "./Assets/Images/image0.png",
+        "reviews" : ["Awesome Car", "I want this car"]
+    },
+    {
+        "name" : "Ocean",
+        "video_src" : "./Assets/Videos/video1.mp4",
+        "description" : "Ocean waves pleasing to the eyes.",
+        "image_src" : "./Assets/Images/image1.png",
+        "reviews" : ["So calming", "I could watch this all day"]
+    },
+    {
+        "name" : "Cloudes",
+        "video_src" : "./Assets/Videos/video2.mp4",
+        "description" : "Cloudes moving in the sky.",
+        "image_src" : "./Assets/Images/image2.png",
+        "reviews" : ["So beautiful", "I love the sky"]
+    },
+    {
+        "name" : "Skateboarding",
+        "video_src" : "./Assets/Videos/video3.mp4",
+        "description" : "Skateboarding in the streets.",
+        "image_src" : "./Assets/Images/image3.png",
+        "reviews" : ["So cool", "I want to try this"]
+    },
+    {
+        "name" : "Fire Works",
+        "video_src" : "./Assets/Videos/video4.mp4",
+        "description" : "Fire works in the night sky.",
+        "image_src" : "./Assets/Images/image4.png",
+        "reviews" : ["Amazing display", "So colorful"]
+    },
+    {
+        "name" : "MineCraft",
+        "video_src" : "./Assets/Videos/video5.mp4",
+        "description" : "MineCraft herobrine dancing.",
+        "image_src" : "./Assets/Images/image5.png",
+        "reviews" : ["So funny", "I love MineCraft"]
+    },
+    {
+        "name" : "Train",
+        "video_src" : "./Assets/Videos/video6.mp4",
+        "description" : "Train moving near the sea shore.",
+        "image_src" : "./Assets/Images/image6.png",
+        "reviews" : ["So relaxing", "I love trains"]
+    },
+    {
+        "name" : "Drone View",
+        "video_src" : "./Assets/Videos/video7.mp4",
+        "description" : "Drone view of a mountain valley.",
+        "image_src" : "./Assets/Images/image7.png",
+        "reviews" : ["Breathtaking view", "I love nature"]
+    },
+    {
+        "name" : "Beach Sunset",
+        "video_src" : "./Assets/Videos/video8.mp4",
+        "description" : "Beach sunset view.",
+        "image_src" : "./Assets/Images/image8.png",
+        "reviews" : ["So romantic", "I love the beach"]
+    },
+    {
+        "name" : "Atlantus",
+        "video_src" : "./Assets/Videos/video9.mp4",
+        "description" : "Atlantus the underwater city.",
+        "image_src" : "./Assets/Images/image9.png",
+        "reviews" : ["So cool", "I want to visit this place"]
+    }
+]
