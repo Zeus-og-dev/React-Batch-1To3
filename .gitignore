@@ -1,1 +1,5 @@
 JS-PROJECT/Video-App/Assets/
+
+# Ignore the node_modules directory
+JS-PROJECT/CRUD-App/node_modules/
+JS-PROJECT/CRUD-App/package-lock.json
