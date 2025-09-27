@@ -1,0 +1,32 @@
+{
+  "users": [
+    {
+      "id": "fa4a",
+      "username": "tmaji435@gmail.com",
+      "email": "tmaji435@gmail.com",
+      "phone": "+917219293995",
+      "password": "12345"
+    },
+    {
+      "id": "30c1",
+      "username": "tmaji112@gmail.com",
+      "email": "tmaji112@gmail.com",
+      "phone": "+917219293995",
+      "password": "12345"
+    },
+    {
+      "id": "a1c2",
+      "username": "Tanmay Maji",
+      "email": "demoe363@gmail.com",
+      "phone": "8080634287",
+      "password": "12345"
+    },
+    {
+      "id": "4203",
+      "username": "Tanisha Maji",
+      "email": "xyz@gmail.com",
+      "phone": "9823981516",
+      "password": "12345"
+    }
+  ]
+}
