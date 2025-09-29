@@ -5,7 +5,7 @@
 		<meta
 			name="viewport"
 			content="width=device-width, initial-scale=1.0" />
-		<title>USER-APP</title>
+		<title>Home Page</title>
 
 		<!-- Google Fonts -->
 		<link
@@ -19,16 +19,15 @@
 			href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
 			rel="stylesheet" />
 
-		<!-- Styles -->
+		<!-- Font Awesome (correct version) -->
 		<link
 			rel="stylesheet"
-			href="styles.css" />
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
 
-		<!-- Favicon -->
+		<!-- Custom CSS -->
 		<link
-			rel="shortcut icon"
-			href="user.ico"
-			type="image/x-icon" />
+			rel="stylesheet"
+			href="style.css" />
 
 		<!-- Toastify CSS -->
 		<link
@@ -37,75 +36,46 @@
 			href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css" />
 	</head>
 	<body>
-		<div class="container">
-			<div class="main">
-				<!-- REGISTER FORM -->
-				<form class="register-form">
-					<h1>User Register</h1>
-					<input
-						type="text"
-						name="username"
-						id="reg-username"
-						placeholder="Enter Username"
-						autocomplete="username"
-						required />
-					<input
-						type="email"
-						name="email"
-						id="reg-email"
-						placeholder="Enter Your Email"
-						autocomplete="email"
-						required />
-					<input
-						type="tel"
-						name="phone"
-						id="reg-phone"
-						placeholder="Enter Your Phone Number"
-						autocomplete="tel"
-						required />
-					<input
-						type="password"
-						name="password"
-						id="reg-password"
-						placeholder="Enter Password"
-						autocomplete="new-password"
-						required />
-					<!-- <input
-						type="password"
-						name="repassword"
-						id="re-reg-repassword"
-						placeholder="Re-Enter Password"
-						autocomplete="new-password"
-						required /> -->
-					<button type="submit">Register</button>
-					<span class="toggle-to-login">Already have an account?</span>
-				</form>
+		<div class="home-container">
+			<nav>
+				<div class="logo">MyWebsite</div>
 
-				<!-- LOGIN FORM -->
-				<form class="login-form">
-					<h1>User Login</h1>
-					<input
-						type="text"
-						name="username"
-						id="login-username"
-						placeholder="Enter Your Username"
-						autocomplete="username"
-						required />
-					<input
-						type="password"
-						name="password"
-						id="login-password"
-						placeholder="Enter Password"
-						autocomplete="current-password"
-						required />
-					<button type="submit">Login</button>
-					<span class="toggle-to-register">Don't have an account?</span>
-				</form>
-			</div>
+				<ul class="nav-links">
+					<li><a href="#home">Home</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#contact">Contact</a></li>
+					<li>
+						<p class="user-greeting">
+							Hello, <span id="username-display"></span>!
+						</p>
+					</li>
+					<li class="action-buttons">
+						<a
+							href="login.html"
+							class="btn"
+							id="login-button"
+							aria-label="Login">
+							<i class="fa-solid fa-user"></i>
+							<span>Login</span>
+						</a>
+						<button
+							class="btn"
+							id="logout-button"
+							aria-label="Logout">
+							<i class="fa-solid fa-right-from-bracket"></i>
+							<span>Logout</span>
+						</button> 	
+					</li>
+				</ul>
+			</nav>
+
+			<header>
+				<h1>Welcome to the Home Page</h1>
+				<p class="subtitle">Explore our website and enjoy the experience.</p>
+			</header>
 		</div>
 
-		<!-- JS -->
-		<script src="App.js"></script>
+		<script src="App1.js"></script>
 		<script
 			type="text/javascript"
 			src="https://cdn.jsdelivr.net/npm/toastify-js"></script>

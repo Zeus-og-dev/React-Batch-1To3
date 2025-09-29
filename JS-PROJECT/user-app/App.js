@@ -44,6 +44,11 @@ registerForm.addEventListener("submit", async (e) => {
         return;
     }
 
+    if (data.password !== data.repassword) {
+        showToast("Passwords do not match.", "red");
+        return;
+    }
+
     let user = await checkUserExistence(data.username);
     if (user === false) {
         try {
@@ -84,8 +89,9 @@ loginForm.addEventListener("submit", async (e) => {
 
     let user = await checkUserExistence(data.username);
     if (user && user.password === data.password) {
-        showToast("Login successful!", "green");
         loginForm.reset();
+        window.location.href = "index.html";
+        localStorage.setItem("loggedInUser", data.username);
     } else {
         showToast("Invalid username or password.", "red");
     }

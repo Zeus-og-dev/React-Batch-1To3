@@ -1,0 +1,118 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: #f8f9fa;
+    color: #333;
+}
+
+/* Container */
+.home-container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background: #35424a;
+    color: #ffffff;
+    padding: 15px 30px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #ffffff;
+}
+
+.nav-links {
+    margin-top: 5px;
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #e8491d;
+}
+
+/* User Greeting */
+.user-greeting {
+    display: none;
+    font-size: 17px;
+    color: #ffffff;
+    margin-top: -1px;
+}
+
+#username-display {
+    font-weight: bold;
+    color: #e8491d;
+}
+
+/* Buttons */
+.action-buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: -7px;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: #e8491d;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+    background: #cf3c14;
+    transform: scale(1.05);
+}
+
+/* Header Section */
+header {
+    text-align: center;
+    margin-top: 80px;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 32px;
+    color: #35424a;
+    margin-bottom: 10px;
+}
+
+header .subtitle {
+    font-size: 18px;
+    color: #555;
+    margin-top: 5px;
+}
