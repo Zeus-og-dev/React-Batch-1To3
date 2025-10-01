@@ -64,6 +64,7 @@ addUserForm.addEventListener("submit", (e) => {
             console.log("User added:", data);
             document.querySelector(".add-data-container").style.display = "none";
             addUserForm.reset();
+            window.location.reload(); 
         })
         .catch((error) => console.error("Error adding user:", error));
 });
@@ -116,6 +117,7 @@ updateUserForm.addEventListener("submit", (e) => {
             console.log("User updated:", data);
             document.querySelector(".update-data-container").style.display = "none";
             updateUserForm.reset();
+            window.location.reload();
         })
         .catch((error) => console.error("Error updating user:", error));
 });

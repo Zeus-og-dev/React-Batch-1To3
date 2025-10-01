@@ -78,3 +78,14 @@ span:hover {
     color: rgb(15, 200, 0);
     text-decoration: underline;
 }
+
+span > a{
+    color: hsla(130, 40%, 36%, 0.875);
+    text-decoration: none;
+}
+
+span:hover {
+    cursor: pointer;
+    color: rgb(15, 200, 0);
+    text-decoration: underline;
+}
